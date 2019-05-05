@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simple Sticky Header Plugin Example</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet" type="text/css">
+    <style>
+body { min-height: 300vh; font-family:'Roboto'; background-color:#4FC2E5; color:#fff; }
+p { font-family:1.2em; line-height:1.8}
+.container {
+  max-width: 728px;
+  margin: 50px auto;
+}
+
+.header {
+  width: 100%;
+  background: #232323;
+}
+
+h1 { margin: 70px auto }
+
+.sticky-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.navbar ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  display: block;
+  flex: 1;
+  text-align: center;
+  font-size: 24px;
+  padding: 12px 0;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+</style>
+    </head>
+
+    <body>
+<div class="container">
+      <h1>Simple Sticky Header Plugin Example</h1>
+      <div class="jquery-script-ads" style="margin-bottom:70px;"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+      <div id="sticky-header" class="header">
+    <nav class="navbar">
+          <ul>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="#">Link 4</a></li>
+      </ul>
+        </nav>
+        
+  </div>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel molestie velit, ullamcorper sodales elit. Vivamus efficitur libero in commodo pulvinar. Vivamus scelerisque convallis arcu, in laoreet massa viverra a. Ut sodales urna id velit placerat congue. Aliquam et ultricies nisl. Vivamus id metus ut justo accumsan rutrum vitae a lacus. Maecenas et euismod mauris. Aenean feugiat magna sed enim elementum hendrerit. Vivamus porttitor nunc felis, at iaculis nunc cursus vel.</p>
+  <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam ut elit nec enim aliquet euismod. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In placerat risus vitae neque hendrerit, sed semper nisl aliquet. In fringilla purus vitae ligula facilisis, et sodales purus congue. Cras pretium id nisi a pulvinar. Morbi eu rhoncus magna. Phasellus eu arcu diam. Aliquam a neque sit amet nulla consectetur interdum sit amet ac eros. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris gravida magna urna, sed consectetur mauris semper eu. Ut a dolor dui. Aliquam quis ante id ligula malesuada porttitor at vel felis. Donec nisi arcu, eleifend id magna volutpat, tempor fringilla elit.</p>
+  <p>Proin mauris mi, cursus non varius non, semper volutpat mi. Nunc non consectetur nisi, ac facilisis dolor. Sed erat urna, pharetra tincidunt elementum et, egestas id libero. Mauris suscipit elementum sapien. Suspendisse at pretium nisi. Nullam rhoncus orci non venenatis lacinia. Suspendisse sed lacus vitae ligula rhoncus dapibus. Sed pharetra turpis ligula, in dictum mi fermentum a. Vivamus interdum nunc et eros tempus lobortis. Mauris semper urna nec metus consequat tempor. Donec porttitor ipsum ut nulla interdum cursus. Mauris mattis quam auctor, vestibulum mauris eget, fringilla ipsum. Duis convallis convallis hendrerit. Maecenas ultrices dolor est, at euismod velit dignissim ac.</p>
+  <p>Cras lobortis velit vel arcu suscipit laoreet. Suspendisse placerat ullamcorper orci ac tempor. Integer orci urna, ultricies auctor laoreet ut, hendrerit ut nisi. Fusce magna urna, consequat sit amet sodales commodo, congue eu dui. Nam a mi nec lacus pretium ullamcorper. Vivamus vel purus risus. In enim sapien, posuere fringilla ornare sit amet, tristique posuere diam. Nam non tortor mattis dui gravida tristique sed in sem. Pellentesque et malesuada enim. Donec sit amet tellus ac tellus ultrices lacinia. Praesent a vestibulum leo, eu egestas turpis. Ut nibh urna, gravida quis ultricies non, mollis vel urna. Morbi et risus ante. Duis condimentum dignissim lectus at aliquam. Duis ut fermentum lectus.</p>
+  <p>Morbi elit lorem, suscipit ac metus sit amet, gravida tincidunt massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec in sapien a ex tincidunt scelerisque at et felis. Morbi suscipit condimentum sem. Fusce viverra elit neque, at mollis ligula interdum ut. Maecenas sit amet leo vel leo fringilla ornare in et nibh. Praesent orci ipsum, pretium ac pharetra in, fermentum in diam. Curabitur iaculis justo semper nibh maximus vehicula. Maecenas a augue ante. Nulla consectetur iaculis consectetur. Integer pretium nec ligula vitae lobortis. Nunc mattis neque vel libero facilisis fermentum. Donec nec risus in quam sollicitudin imperdiet. Etiam tincidunt, dolor at ornare faucibus, odio dui ultricies mi, at blandit mauris risus in justo.</p>
+    </div>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> 
+<script src="simple-sticky-header.js"></script> 
+<script>
+$(function() {
+            $("#sticky-header").simpleStickyHeader();
+        });
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

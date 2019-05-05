@@ -1,0 +1,248 @@
+.settings {
+  width: 100%;
+  max-width: 800px;
+  background: #e6e6e6;
+  position: absolute;
+  bottom: 4em;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+  font-size: 100%;
+  padding: 1em;
+  border-radius: 5px;
+  border: 2px dashed #b3b3b3;
+}
+
+@media screen and (max-width: 767px) {
+  .settings {
+    position: relative;
+    clear: both;
+    max-width: 100%;
+    margin-left: -20px;
+    float: left;
+    margin-top: 100px;
+  }
+  .settings table, .settings tr, .settings td, .settings tbody {
+    display: block;
+    width: 100%;
+  }
+  .settings .hide-table {
+    display: none;
+  }
+}
+
+.settings * {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-align: left;
+  color: #333;
+  box-sizing: border-box;
+}
+
+.settings label {
+  font-size: small;
+  cursor: pointer;
+  text-shadow: 0px 0px 0px;
+  position: relative;
+}
+
+.settings label:hover[data-tooltip]:before {
+  display: block;
+}
+
+.settings label[data-tooltip]:before {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  width: 100%;
+  background: black;
+  padding: 10px;
+  border-radius: 4px;
+  min-width: 200px;
+  font-size: 12px;
+  font-weight: normal;
+  z-index: 9999;
+  color: white;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  display: none;
+}
+
+.settings hr {
+  border-bottom: 1px solid #cccccc;
+  width: 100%;
+  display: block;
+  margin: 10px 0;
+}
+
+.settings td {
+  padding: 0 10px 15px;
+}
+
+.settings select {
+  position: relative;
+  left: 5px;
+  padding-right: 10px;
+}
+
+.settings option {
+  padding: 2px;
+}
+
+.settings input[type=checkbox] {
+  position: relative;
+  top: 2px;
+  left: 5px;
+  cursor: pointer;
+}
+
+.settings .color-change {
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+  background: black;
+  cursor: pointer;
+  float: left;
+  margin-left: 10px;
+  margin-top: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.settings .color-change:nth-child(1) {
+  background: #607d8b;
+}
+
+.settings .color-change:nth-child(2) {
+  background: #566f7c;
+}
+
+.settings .color-change:nth-child(3) {
+  background: #795547;
+}
+
+.settings .color-change:nth-child(4) {
+  background: #694a3e;
+}
+
+.settings .color-change:nth-child(5) {
+  background: #00bcd5;
+}
+
+.settings .color-change:nth-child(6) {
+  background: #00a5bc;
+}
+
+.settings .color-change:nth-child(7) {
+  background: #fe5722;
+}
+
+.settings .color-change:nth-child(8) {
+  background: #fe4409;
+}
+
+.settings .color-change:nth-child(9) {
+  background: #673bb7;
+}
+
+.settings .color-change:nth-child(10) {
+  background: #5c35a4;
+}
+
+.settings .color-change:nth-child(11) {
+  background: #787878;
+}
+
+.settings .color-change:nth-child(12) {
+  background: #6b6b6b;
+}
+
+.settings .color-change:nth-child(13) {
+  background: #3f51b5;
+}
+
+.settings .color-change:nth-child(14) {
+  background: #3849a2;
+}
+
+.settings .color-change:nth-child(15) {
+  background: #0af;
+}
+
+.settings .color-change:nth-child(16) {
+  background: #008fd6;
+}
+
+.settings .color-change:nth-child(17) {
+  background: #8bc24a;
+}
+
+.settings .color-change:nth-child(18) {
+  background: #7eb53d;
+}
+
+.settings .color-change:nth-child(19) {
+  background: #b2c022;
+}
+
+.settings .color-change:nth-child(20) {
+  background: #9daa1e;
+}
+
+.settings .color-change:nth-child(21) {
+  background: #ff9700;
+}
+
+.settings .color-change:nth-child(22) {
+  background: #eb8b00;
+}
+
+.settings .color-change:nth-child(23) {
+  background: #ea1e63;
+}
+
+.settings .color-change:nth-child(24) {
+  background: #da1457;
+}
+
+.settings .color-change:nth-child(25) {
+  background: #9c28b1;
+}
+
+.settings .color-change:nth-child(26) {
+  background: #9125a5;
+}
+
+.settings .color-change:nth-child(27) {
+  background: #f44236;
+}
+
+.settings .color-change:nth-child(28) {
+  background: #f32b1e;
+}
+
+.settings .color-change:nth-child(29) {
+  background: #009788;
+}
+
+.settings .color-change:nth-child(30) {
+  background: #007e71;
+}
+
+@media screen and (min-width: 768px) {
+  .margin-fix {
+    margin-left: -500px !important;
+  }
+  .margin-fix-1 {
+    margin-left: -540px !important;
+  }
+}
